@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Допуслуги — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=meeting-doma-4" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item" href="news.html">Новости</a>
+          <a class="nav-item active" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="company.html">Профиль</a>
+          <a class="nav-item" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <b>Допуслуги</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1>Допуслуги и партнёры</h1>
+      </div>
+      <p class="hint" style="margin-top:-8px">Услуги УК и партнёров сверх договора аренды. Заявка уходит в общий контур запросов — менеджер свяжется и уточнит объём, сроки и стоимость.</p>
+
+      <div class="svc-list svc-list--grid">
+        <article class="svc-card" id="broker">
+          <div class="svc-media"><img src="img/news/ad-broker.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Брокеридж</h3>
+            <p class="svc-lead">Подбор, аренда и продажа площадей в портфеле УК и на рынке.</p>
+            <ul class="svc-points">
+              <li>Расширение или сокращение офиса в текущем БЦ</li>
+              <li>Поиск площадей под новый офис / склад / ритейл</li>
+              <li>Сопровождение сделки и сверка коммерческих условий</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Брокеридж"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Подбор, аренда и продажа площадей: расширение или сокращение офиса, поиск новых площадей, сопровождение сделки."
+                data-toast="Заявка на брокеридж отправлена. Менеджер свяжется в ближайшее время.">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card" id="build">
+          <div class="svc-media"><img src="img/news/ad-build.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Ремонтно-строительные работы</h3>
+            <p class="svc-lead">Собственная бригада УК: отделка, монтаж, сопровождение ремонтов на объекте.</p>
+            <ul class="svc-points">
+              <li>Косметический и капитальный ремонт помещений</li>
+              <li>Монтаж перегородок, инженерных точек, слаботочки</li>
+              <li>Согласование работ с регламентами БЦ и СБ</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Ремонт и стройка"
+                data-meta="Допуслуга · собственная бригада УК"
+                data-text="Отделка, монтаж, fit-out и сопровождение ремонтов на объекте с согласованием регламентов БЦ и СБ."
+                data-toast="Заявка на строительные работы отправлена">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card" id="clean">
+          <div class="svc-media"><img src="img/news/ad-clean.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Клининг сверх договора</h3>
+            <p class="svc-lead">Дополнительная уборка поверх планового обслуживания МОП и офиса.</p>
+            <ul class="svc-points">
+              <li>Генеральная уборка после ремонта или переезда</li>
+              <li>Постмероприятийный клининг переговорных и холлов</li>
+              <li>Разовые работы: мойка остекления, химчистка мебели</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Клининг+"
+                data-meta="Допуслуга · сверх договора"
+                data-text="Генеральная уборка, постмероприятийный клининг, мойка остекления и химчистка мебели сверх планового обслуживания."
+                data-toast="Заявка на клининг отправлена">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card" id="insure">
+          <div class="svc-media"><img src="img/news/ad-insure.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Страхование</h3>
+            <p class="svc-lead">Программы через партнёров УК для арендаторов и собственников.</p>
+            <ul class="svc-points">
+              <li>Страхование имущества и ответственности в помещении</li>
+              <li>Программы для сотрудников и корпоративных рисков</li>
+              <li>Подбор условий под договор аренды и требования БЦ</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Страхование"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Страхование имущества и ответственности в помещении, корпоративные программы через партнёров УК."
+                data-toast="Заявка на страхование отправлена. Партнёр свяжется для расчёта.">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card" id="telecom">
+          <div class="svc-media"><img src="img/news/svc-telecom.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Телеком и ИТ</h3>
+            <p class="svc-lead">Интернет, телефония и локальные сети в помещении через провайдеров БЦ.</p>
+            <ul class="svc-points">
+              <li>Подключение и расширение канала интернета</li>
+              <li>Монтаж СКС, Wi-Fi, телефонии в офисе</li>
+              <li>Доступ подрядчика в серверные и кабельные трассы</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Телеком и ИТ"
+                data-meta="Допуслуга · провайдеры БЦ"
+                data-text="Интернет, телефония, СКС и Wi-Fi в помещении; доступ подрядчика в серверные и кабельные трассы."
+                data-toast="Заявка на телеком отправлена">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card" id="moving">
+          <div class="svc-media"><img src="img/news/svc-moving.jpg" alt="" /></div>
+          <div class="svc-card-body">
+            <h3>Переезд и логистика</h3>
+            <p class="svc-lead">Переезд внутри БЦ или между объектами с сопровождением УК.</p>
+            <ul class="svc-points">
+              <li>Упаковка, перевозка, сборка и разборка мебели</li>
+              <li>Бронирование лифта и зоны погрузки</li>
+              <li>Пропуска на технику и грузчиков через СБ</li>
+            </ul>
+            <div class="svc-card-actions">
+              <button class="btn btn-primary btn-sm" type="button" data-modal="svc-view"
+                data-title="Переезд и логистика"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Упаковка, перевозка, сборка мебели; бронирование лифта и зоны погрузки; пропуска на технику и грузчиков."
+                data-toast="Заявка на переезд отправлена">Оставить заявку</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="svc-view" hidden>
+    <div class="modal-card modal-card--svc">
+      <button class="back-link" type="button" data-close>← Назад</button>
+      <h3 data-fill-title>Допуслуга</h3>
+      <div class="meta" data-fill-meta></div>
+      <p class="svc-modal-lead" data-fill-text></p>
+
+      <form class="svc-request-form" data-svc-form>
+        <p class="svc-form-hint">Заявка уйдёт менеджеру. Данные юрлица подтягиваются из профиля; укажите, кто запрашивает услугу и куда перезвонить.</p>
+
+        <div class="svc-org-card" data-svc-org>
+          <div class="svc-org-title">Данные юрлица</div>
+          <dl class="mini-kv">
+            <div><dt>Организация</dt><dd data-svc-org-name>ООО «Северные системы»</dd></div>
+            <div><dt>ИНН / КПП</dt><dd data-svc-org-inn>7701234567 / 770101001</dd></div>
+            <div><dt>Договор</dt><dd data-svc-org-contract>№ 488-АР от 01.03.2025</dd></div>
+          </dl>
+        </div>
+
+        <div class="field-label">Кто запрашивает</div>
+        <label class="field">
+          <select data-svc-contact></select>
+        </label>
+        <div class="field-label">Телефон для связи</div>
+        <label class="field">
+          <input type="tel" data-svc-phone placeholder="+7 ___ ___-__-__" required />
+        </label>
+        <div class="field-label">E-mail для связи</div>
+        <label class="field">
+          <input type="email" data-svc-email placeholder="name@company.ru" required />
+        </label>
+        <div class="field-label">Комментарий <span class="field-label-opt">(необязательно)</span></div>
+        <label class="field">
+          <textarea rows="3" data-svc-comment placeholder="Кратко опишите задачу или удобное время для звонка"></textarea>
+        </label>
+        <div class="modal-actions">
+          <button class="btn btn-primary btn-sm" type="submit">Оставить заявку</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-close>Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

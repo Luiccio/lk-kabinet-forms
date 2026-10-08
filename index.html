@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1A2332" />
+  <title>Главная — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=meeting-doma-4" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item active" href="index.html">Главная</a>
+          <a class="nav-item" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item" href="news.html">Новости</a>
+          <a class="nav-item" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="company.html">Профиль</a>
+          <a class="nav-item" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <b>Главная</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+
+          <div class="notif-pop" hidden>
+            <div class="notif-head">
+              <strong>Уведомления</strong>
+              <button type="button" data-mark-read>Прочитать все</button>
+            </div>
+            <div class="notif-chips">
+              <button class="filter active" type="button">Все</button>
+              <button class="filter" type="button">Документы</button>
+              <button class="filter" type="button">Запросы</button>
+            </div>
+            <div class="notif-list">
+              <a class="notif-item" href="documents.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg></span>
+                <span>
+                  <strong>Новый документ: счёт за сентябрь</strong>
+                  <span>Документы · 10 минут назад</span>
+                </span>
+              </a>
+              <a class="notif-item" href="requests.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-7 7H8l-4 2 1.2-3.4A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7Z" /></svg></span>
+                <span>
+                  <strong>Ресепшен ответил в заявке №108</strong>
+                  <span>Запросы · сегодня, 09:40</span>
+                </span>
+              </a>
+              <a class="notif-item" href="news.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l6 4V6l-6 4H4Z" /><path d="M17 9.5a4 4 0 0 1 0 5" /></svg></span>
+                <span>
+                  <strong>Отключение горячей воды</strong>
+                  <span>Новость по объекту · вчера</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Добрый день, Михаил.</h1>
+          <div class="bc-switch" data-bc-switch aria-label="Активный бизнес-центр">
+            <span class="bc-switch-label">Бизнес-центр:</span>
+            <select class="bc-select" data-bc-select>
+              <option value="alpha">БЦ «Альфа»</option>
+              <option value="omega">БЦ «Омега»</option>
+              <option value="sigma">БЦ «Сигма»</option>
+              <option value="delta">БЦ «Дельта»</option>
+              <option value="vega">БЦ «Вега»</option>
+              <option value="park">БЦ «Парк»</option>
+            </select>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <div class="phone-pop" data-phone-pop>
+            <button class="hero-phone" type="button" data-phone-toggle aria-expanded="false" aria-haspopup="true">
+              <small>УК · единый номер</small>
+              <strong data-bc-phone-label>+7 (495) 000-11-22</strong>
+            </button>
+            <div class="phone-pop-menu" data-phone-menu hidden>
+              <a class="phone-pop-item" data-phone-main href="tel:+74950001122">
+                <span>Единый номер УК</span>
+                <strong data-bc-phone-main-label>+7 (495) 000-11-22</strong>
+              </a>
+              <a class="phone-pop-item" data-phone-ext="manage" href="tel:+74950001122">
+                <span>Управляющий · доб.</span>
+                <strong data-phone-ext-label>+7 (495) 000-11-22</strong>
+              </a>
+              <a class="phone-pop-item" data-phone-ext="desk" href="tel:+74950001123">
+                <span>Диспетчерская · 24/7</span>
+                <strong data-phone-ext-label>+7 (495) 000-11-23</strong>
+              </a>
+              <a class="phone-pop-item" data-phone-ext="sec" href="tel:+74950001124">
+                <span>СБ / ресепшен</span>
+                <strong data-phone-ext-label>+7 (495) 000-11-24</strong>
+              </a>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="create.html" data-bc-create>Создать запрос</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="home-split">
+          <div class="home-news">
+            <div class="section-head">
+              <h2>Новости</h2>
+              <a class="link" href="news.html">Все →</a>
+            </div>
+            <div class="ad-banner" data-ad-strip aria-label="Реклама партнёров">
+              <div class="ad-banner-stage">
+                <button class="ann-card ann-card--ad ad-banner-slide is-active" type="button" data-bc="alpha" data-ad-slide data-modal="ann-view"
+                  data-title="−15% на брокеридж от партнёров УК"
+                  data-meta="Реклама · допуслуги · БЦ «Альфа»"
+                  data-text="Спецпредложение для арендаторов: подбор и расширение офиса через партнёров УК со скидкой 15% до конца месяца. Оформить — в разделе «Допуслуги»."
+                  data-image="img/news/ad-broker.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/ad-broker.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>−15% на брокеридж от партнёров УК</strong>
+                    <span>Допуслуги · спецпредложение · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ann-card ann-card--ad ad-banner-slide" type="button" data-bc="alpha" data-ad-slide data-modal="ann-view"
+                  data-title="Скидка на клининг от партнёров"
+                  data-meta="Реклама · допуслуги · БЦ «Альфа»"
+                  data-text="Генеральная уборка и постмероприятийный клининг сверх договора — со скидкой для арендаторов БЦ. Заявка в «Допуслуги»."
+                  data-image="img/news/ad-clean.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/ad-clean.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>Скидка на клининг от партнёров</strong>
+                    <span>Допуслуги · акция октября · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ann-card ann-card--ad ad-banner-slide" type="button" data-bc="alpha" data-ad-slide data-modal="ann-view"
+                  data-title="Страхование офиса — тариф для арендаторов"
+                  data-meta="Реклама · допуслуги · БЦ «Альфа»"
+                  data-text="Партнёры УК: страхование имущества и ответственности со специальным тарифом для арендаторов. Заявка в «Допуслуги»."
+                  data-image="img/news/ad-insure.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/ad-insure.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>Страхование офиса — тариф для арендаторов</strong>
+                    <span>Допуслуги · партнёры УК · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ann-card ann-card--ad ad-banner-slide" type="button" data-bc="omega" data-ad-slide data-modal="ann-view"
+                  data-title="Страхование офиса — тариф для арендаторов"
+                  data-meta="Реклама · допуслуги · БЦ «Омега»"
+                  data-text="Партнёры УК: страхование имущества и ответственности со специальным тарифом для арендаторов. Заявка в «Допуслуги»."
+                  data-image="img/news/ad-insure.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/ad-insure.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>Страхование офиса — тариф для арендаторов</strong>
+                    <span>Допуслуги · партнёры УК · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ann-card ann-card--ad ad-banner-slide" type="button" data-bc="omega" data-ad-slide data-modal="ann-view"
+                  data-title="Ремонт и отделка со скидкой 10%"
+                  data-meta="Реклама · допуслуги · БЦ «Омега»"
+                  data-text="Собственная бригада УК: отделка, монтаж, fit-out. Для арендаторов БЦ — скидка 10% на работы сверх договора."
+                  data-image="img/news/ad-build.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/ad-build.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>Ремонт и отделка со скидкой 10%</strong>
+                    <span>Допуслуги · спецпредложение · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ann-card ann-card--ad ad-banner-slide" type="button" data-bc="omega" data-ad-slide data-modal="ann-view"
+                  data-title="Переезд и логистика под ключ"
+                  data-meta="Реклама · допуслуги · БЦ «Омега»"
+                  data-text="Партнёры УК: упаковка, перевозка и сборка мебели при переезде внутри БЦ или между объектами."
+                  data-image="img/news/svc-moving.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/svc-moving.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-ad">Реклама</span>
+                    <strong>Переезд и логистика под ключ</strong>
+                    <span>Допуслуги · партнёры УК · подробнее →</span>
+                  </div>
+                </button>
+                <button class="ad-banner-prev" type="button" data-ad-prev aria-label="Предыдущая реклама" hidden>←</button>
+                <button class="ad-banner-next" type="button" data-ad-next aria-label="Следующая реклама">→</button>
+              </div>
+              <div class="ad-banner-dots" data-ad-dots aria-label="Переключение рекламы"></div>
+            </div>
+
+            <div class="news-scroller-wrap">
+              <div class="news-scroller" data-bc-news data-news-scroller tabindex="0" aria-label="Новости объекта">
+                <button class="ann-card" type="button" data-bc="alpha" data-modal="ann-view"
+                  data-title="Отключение горячей воды"
+                  data-meta="БЦ «Альфа» · сегодня, 10:00–16:00 · тег: Важно"
+                  data-text="С 10:00 до 16:00 проводятся работы на тепловом узле БЦ «Альфа»."
+                  data-image="img/news/water.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/water.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-alert">Важно</span>
+                    <strong>Отключение горячей воды</strong>
+                    <span>БЦ «Альфа» · сегодня</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="alpha" data-modal="ann-view"
+                  data-title="Замена счётчиков на этажах 1–10"
+                  data-meta="БЦ «Альфа» · 25.09 · тег: Работы на объекте"
+                  data-text="25 сентября подрядчик меняет приборы учёта на этажах 1–10."
+                  data-image="img/news/meters.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/meters.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-warn">Объект</span>
+                    <strong>Замена счётчиков, этажи 1–10</strong>
+                    <span>БЦ «Альфа» · 25.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="alpha" data-modal="ann-view"
+                  data-title="Обновлены правила пропусков"
+                  data-meta="БЦ «Альфа» · 26.09 · тег: Регламенты"
+                  data-text="Актуальная редакция — в разделе управляющей компании."
+                  data-image="img/news/rules.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/rules.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-info">Регламент</span>
+                    <strong>Обновлены правила пропусков</strong>
+                    <span>БЦ «Альфа» · 26.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="alpha" data-modal="ann-view"
+                  data-title="Плановая проверка пожарной сигнализации"
+                  data-meta="БЦ «Альфа» · 29.09 · тег: Работы на объекте"
+                  data-text="29 сентября с 11:00 до 13:00 — плановая проверка. Возможны короткие срабатывания оповещения."
+                  data-image="img/news/fire.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/fire.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-warn">Объект</span>
+                    <strong>Проверка пожарной сигнализации</strong>
+                    <span>БЦ «Альфа» · 29.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="omega" hidden data-modal="ann-view"
+                  data-title="Вымыт фасад северной стороны"
+                  data-meta="БЦ «Омега» · 18.09 · тег: Работы на объекте"
+                  data-text="Работы завершены, парковка у северного входа снова открыта."
+                  data-image="img/news/facade.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/facade.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-info">Объект</span>
+                    <strong>Вымыт фасад северной стороны</strong>
+                    <span>БЦ «Омега» · 18.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="omega" hidden data-modal="ann-view"
+                  data-title="Правила парковки обновлены"
+                  data-meta="БЦ «Омега» · 12.09 · тег: Регламенты"
+                  data-text="Актуальная редакция правил парковки — в разделе управляющей компании."
+                  data-image="img/news/rules.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/rules.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-info">Регламент</span>
+                    <strong>Правила парковки обновлены</strong>
+                    <span>БЦ «Омега» · 12.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="omega" hidden data-modal="ann-view"
+                  data-title="Ночной график уборки МОП"
+                  data-meta="БЦ «Омега» · 22.09 · тег: Инфраструктура"
+                  data-text="С 1 октября ночная уборка мест общего пользования — с 22:00 до 05:00."
+                  data-image="img/news/clean.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/clean.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-info">Инфраструктура</span>
+                    <strong>Ночной график уборки МОП</strong>
+                    <span>БЦ «Омега» · 22.09</span>
+                  </div>
+                </button>
+                <button class="ann-card" type="button" data-bc="omega" hidden data-modal="ann-view"
+                  data-title="Плановая проверка пожарной сигнализации"
+                  data-meta="БЦ «Омега» · 29.09 · тег: Работы на объекте"
+                  data-text="29 сентября с 11:00 до 13:00 — плановая проверка на объекте."
+                  data-image="img/news/fire.jpg">
+                  <div class="ann-media ann-media--photo"><img src="img/news/fire.jpg" alt="" /></div>
+                  <div class="ann-body">
+                    <span class="badge badge-warn">Объект</span>
+                    <strong>Проверка пожарной сигнализации</strong>
+                    <span>БЦ «Омега» · 29.09</span>
+                  </div>
+                </button>
+              </div>
+              <button class="news-scroller-prev" type="button" data-news-prev aria-label="Листать новости влево" hidden>←</button>
+              <button class="news-scroller-next" type="button" data-news-next aria-label="Листать новости вправо">→</button>
+            </div>
+          </div>
+
+          <div class="home-services">
+            <div class="section-head">
+              <h2>Допуслуги</h2>
+              <a class="link" href="services.html">Все →</a>
+            </div>
+            <div class="svc-tiles">
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Брокеридж"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Подбор, аренда и продажа площадей: расширение или сокращение офиса, поиск новых площадей, сопровождение сделки."
+                data-toast="Заявка на брокеридж отправлена. Менеджер свяжется в ближайшее время.">
+                <strong>Брокеридж</strong>
+                <span>Аренда и продажа площадей</span>
+              </button>
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Ремонт и стройка"
+                data-meta="Допуслуга · собственная бригада УК"
+                data-text="Отделка, монтаж, fit-out и сопровождение ремонтов на объекте с согласованием регламентов БЦ и СБ."
+                data-toast="Заявка на строительные работы отправлена">
+                <strong>Ремонт и стройка</strong>
+                <span>Собственная бригада</span>
+              </button>
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Клининг+"
+                data-meta="Допуслуга · сверх договора"
+                data-text="Генеральная уборка, постмероприятийный клининг, мойка остекления и химчистка мебели сверх планового обслуживания."
+                data-toast="Заявка на клининг отправлена">
+                <strong>Клининг+</strong>
+                <span>Сверх договора</span>
+              </button>
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Страхование"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Страхование имущества и ответственности в помещении, корпоративные программы через партнёров УК."
+                data-toast="Заявка на страхование отправлена. Партнёр свяжется для расчёта.">
+                <strong>Страхование</strong>
+                <span>Через партнёров УК</span>
+              </button>
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Телеком и ИТ"
+                data-meta="Допуслуга · провайдеры БЦ"
+                data-text="Интернет, телефония, СКС и Wi-Fi в помещении; доступ подрядчика в серверные и кабельные трассы."
+                data-toast="Заявка на телеком отправлена">
+                <strong>Телеком и ИТ</strong>
+                <span>Интернет, связь, сети</span>
+              </button>
+              <button class="svc-tile" type="button" data-modal="svc-view"
+                data-title="Переезд и логистика"
+                data-meta="Допуслуга · партнёры УК"
+                data-text="Упаковка, перевозка, сборка мебели; бронирование лифта и зоны погрузки; пропуска на технику и грузчиков."
+                data-toast="Заявка на переезд отправлена">
+                <strong>Переезд</strong>
+                <span>Упаковка и перевозка</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Быстрые заявки</h2>
+          <a class="link" href="create.html">Все категории →</a>
+        </div>
+        <div class="hot-layout" data-bc-hot>
+          <a class="hot-feature" href="create.html?type=guest" data-bc-create-link>
+            <span class="hot-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19c1.2-3.2 3.4-4.8 6.5-4.8S17.8 15.8 19 19"/><path d="M17.2 7.2 19 5.4M19 7.2l-1.8-1.8"/></svg>
+            </span>
+            <span class="hot-feature-text">
+              <strong>Гостевой пропуск</strong>
+              <span>Гости и авто в одной заявке — в Битриксе разъедется на 2</span>
+            </span>
+          </a>
+          <div class="hot-grid">
+            <a class="hot-tile" href="create.html?type=ops" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5 17 4l3 3-2.5 2.5"/><path d="M16.5 8.5 8 17l-3 1 1-3 8.5-8.5Z"/><path d="M4 20h7"/></svg>
+              </span>
+              <strong>Эксплуатация</strong>
+            </a>
+            <a class="hot-tile" href="create.html?type=clean" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9h5v11h-5z"/><path d="M11 9V4.5h3"/><path d="M17.5 5h2M17.5 8h2M17.5 11h2"/><path d="M9.5 13h5"/></svg>
+              </span>
+              <strong>Клининг</strong>
+            </a>
+            <a class="hot-tile" href="create.html?type=cargo" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5h11v10H4z"/><path d="M15 11.5h4.2L21 14.2V18.5H15"/><circle cx="7.5" cy="18.5" r="1.6"/><circle cx="17.5" cy="18.5" r="1.6"/></svg>
+              </span>
+              <strong>Материальный пропуск</strong>
+            </a>
+            <a class="hot-tile" href="create.html?type=works" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h7"/><path d="M14.5 6.5 17 4l3 3-2.5 2.5"/><path d="M16.5 8.5 8 17l-3 1 1-3 8.5-8.5Z"/></svg>
+              </span>
+              <strong>Производство работ</strong>
+            </a>
+            <a class="hot-tile" href="create.html?type=access" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2"/><circle cx="9" cy="12" r="2.2"/><path d="M13.5 10h4M13.5 14h3"/></svg>
+              </span>
+              <strong>Постоянный пропуск</strong>
+            </a>
+            <a class="hot-tile" href="create.html?type=docs" data-bc-create-link>
+              <span class="hot-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4"/><path d="M10 12h6M10 15.5h4"/></svg>
+              </span>
+              <strong>Документы от УК</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="home-grid">
+          <div>
+            <div class="section-head">
+              <h2>Мои объекты <span class="obj-bc-label" data-bc-objects-label></span></h2>
+              <a class="link" href="objects.html">Все объекты →</a>
+            </div>
+            <div class="obj-list" data-bc-objects>
+              <a class="obj-row" href="object.html?id=142" data-bc="alpha">
+                <div>
+                  <strong>БЦ «Альфа» · Офис 142</strong>
+                  <span>Остоженка, 7 · 5 этаж · 148 м²</span>
+                </div>
+                <span class="obj-count">4 заявки</span>
+              </a>
+              <a class="obj-row" href="object.html?id=210" data-bc="alpha">
+                <div>
+                  <strong>БЦ «Альфа» · Офис 210</strong>
+                  <span>Остоженка, 7 · 2 этаж · 96 м²</span>
+                </div>
+                <span class="obj-count">1 заявка</span>
+              </a>
+              <a class="obj-row" href="object.html?id=a07" data-bc="alpha">
+                <div>
+                  <strong>БЦ «Альфа» · Машиноместо A-07</strong>
+                  <span>Паркинг A</span>
+                </div>
+                <span class="obj-count">0 заявок</span>
+              </a>
+              <a class="obj-row" href="object.html?id=102" data-bc="omega" hidden>
+                <div>
+                  <strong>БЦ «Омега» · Офис 102</strong>
+                  <span>Московское шоссе, 4 · 1 этаж · 86 м²</span>
+                </div>
+                <span class="obj-count">1 заявка</span>
+              </a>
+              <a class="obj-row" href="object.html?id=b14" data-bc="omega" hidden>
+                <div>
+                  <strong>БЦ «Омега» · Машиноместо B-14</strong>
+                  <span>Паркинг B</span>
+                </div>
+                <span class="obj-count">0 заявок</span>
+              </a>
+              <a class="obj-row" href="object.html?id=b15" data-bc="omega" hidden>
+                <div>
+                  <strong>БЦ «Омега» · Машиноместо B-15</strong>
+                  <span>Паркинг B</span>
+                </div>
+                <span class="obj-count">0 заявок</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-head">
+              <h2>Профиль</h2>
+              <a class="link" href="company.html">Данные →</a>
+            </div>
+            <div class="panel">
+              <dl class="mini-kv">
+                <div><dt>Арендатор</dt><dd>Никитин М. А.</dd></div>
+                <div><dt>Тип</dt><dd>Физическое лицо</dd></div>
+                <div><dt>Договор</dt><dd>№ 488-АР от 01.03.2025</dd></div>
+                <div><dt>Телефон</dt><dd>+7 (925) 555-34-12</dd></div>
+                <div><dt>E-mail</dt><dd>m.nikitin@mail.ru</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="modal" id="ann-view" hidden>
+    <div class="modal-card">
+      <button class="back-link" type="button" data-close>← Назад</button>
+      <img class="ann-modal-photo" data-fill-image alt="" hidden />
+      <h3 data-fill-title>Новость</h3>
+      <div class="meta" data-fill-meta></div>
+      <p data-fill-text></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-close>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="svc-view" hidden>
+    <div class="modal-card modal-card--svc">
+      <button class="back-link" type="button" data-close>← Назад</button>
+      <h3 data-fill-title>Допуслуга</h3>
+      <div class="meta" data-fill-meta></div>
+      <p class="svc-modal-lead" data-fill-text></p>
+
+      <form class="svc-request-form" data-svc-form>
+        <p class="svc-form-hint">Заявка уйдёт менеджеру. Данные юрлица подтягиваются из профиля; укажите, кто запрашивает услугу и куда перезвонить.</p>
+
+        <div class="svc-org-card" data-svc-org>
+          <div class="svc-org-title">Данные юрлица</div>
+          <dl class="mini-kv">
+            <div><dt>Организация</dt><dd data-svc-org-name>ООО «Северные системы»</dd></div>
+            <div><dt>ИНН / КПП</dt><dd data-svc-org-inn>7701234567 / 770101001</dd></div>
+            <div><dt>Договор</dt><dd data-svc-org-contract>№ 488-АР от 01.03.2025</dd></div>
+          </dl>
+        </div>
+
+        <div class="field-label">Кто запрашивает</div>
+        <label class="field">
+          <select data-svc-contact></select>
+        </label>
+        <div class="field-label">Телефон для связи</div>
+        <label class="field">
+          <input type="tel" data-svc-phone placeholder="+7 ___ ___-__-__" required />
+        </label>
+        <div class="field-label">E-mail для связи</div>
+        <label class="field">
+          <input type="email" data-svc-email placeholder="name@company.ru" required />
+        </label>
+        <div class="field-label">Комментарий <span class="field-label-opt">(необязательно)</span></div>
+        <label class="field">
+          <textarea rows="3" data-svc-comment placeholder="Кратко опишите задачу или удобное время для звонка"></textarea>
+        </label>
+        <div class="modal-actions">
+          <button class="btn btn-primary btn-sm" type="submit">Оставить заявку</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-close>Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

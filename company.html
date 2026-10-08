@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Профиль — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=meeting-doma-4" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item" href="news.html">Новости</a>
+          <a class="nav-item" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item active" href="company.html">Профиль</a>
+          <a class="nav-item" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <b>Профиль</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+
+          <div class="notif-pop" hidden>
+            <div class="notif-head">
+              <strong>Уведомления</strong>
+              <button type="button" data-mark-read>Прочитать все</button>
+            </div>
+            <div class="notif-chips">
+              <button class="filter active" type="button">Все</button>
+              <button class="filter" type="button">Документы</button>
+              <button class="filter" type="button">Запросы</button>
+            </div>
+            <div class="notif-list">
+              <a class="notif-item" href="documents.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg></span>
+                <span>
+                  <strong>Новый документ: счёт за сентябрь</strong>
+                  <span>Документы · 10 минут назад</span>
+                </span>
+              </a>
+              <a class="notif-item" href="requests.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-7 7H8l-4 2 1.2-3.4A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7Z" /></svg></span>
+                <span>
+                  <strong>Ресепшен ответил в заявке №108</strong>
+                  <span>Запросы · сегодня, 09:40</span>
+                </span>
+              </a>
+              <a class="notif-item" href="news.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l6 4V6l-6 4H4Z" /><path d="M17 9.5a4 4 0 0 1 0 5" /></svg></span>
+                <span>
+                  <strong>Отключение горячей воды</strong>
+                  <span>Новость по объекту · вчера</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1>Профиль</h1>
+      </div>
+
+      <div class="profile-tabs" data-profile-tabs>
+        <button class="profile-tab active" type="button" data-profile-tab="person">Физическое лицо</button>
+        <button class="profile-tab" type="button" data-profile-tab="org">Юридическое лицо</button>
+      </div>
+
+      <section class="panel" data-profile-panel="person">
+        <div class="profile-type">
+          <span class="status status-grey">Физическое лицо</span>
+          <span class="hint" style="margin:0">Демонстрация профиля собственника / арендатора — физлица.</span>
+        </div>
+        <dl class="kv">
+          <div class="kv-row"><dt>ФИО</dt><dd>Никитин Михаил Александрович</dd></div>
+          <div class="kv-row"><dt>Документ</dt><dd>Паспорт РФ · серия 45 12 № 789456</dd></div>
+          <div class="kv-row"><dt>ИНН</dt><dd>771408925431</dd></div>
+          <div class="kv-row"><dt>Договор</dt><dd>№ 488-АР от 01.03.2025</dd></div>
+          <div class="kv-row"><dt>Телефон</dt><dd>+7 (925) 555-34-12</dd></div>
+          <div class="kv-row"><dt>E-mail</dt><dd>m.nikitin@mail.ru</dd></div>
+          <div class="kv-row"><dt>Контактное лицо 1</dt><dd>Алексей Смирнов · +7 (926) 111-22-33</dd></div>
+          <div class="kv-row"><dt>Контактное лицо 2</dt><dd>Евгения Орлова · +7 (903) 444-55-66</dd></div>
+        </dl>
+        <div class="modal-actions">
+          <button class="btn btn-ghost btn-sm" type="button" data-modal="change-view">Запросить изменение данных</button>
+          <button class="btn btn-soft btn-sm" type="button" data-toast="Выход из кабинета">Выйти</button>
+        </div>
+      </section>
+
+      <section class="panel" data-profile-panel="org" hidden>
+        <div class="profile-type">
+          <span class="status status-grey">Юридическое лицо</span>
+          <span class="hint" style="margin:0">Карточка организации: реквизиты + контактные лица, которые могут оставлять заявки.</span>
+        </div>
+        <dl class="kv">
+          <div class="kv-row"><dt>Организация</dt><dd>ООО «Северные системы»</dd></div>
+          <div class="kv-row"><dt>ИНН / КПП</dt><dd>7701234567 / 770101001</dd></div>
+          <div class="kv-row"><dt>ОГРН</dt><dd>1157746123456</dd></div>
+          <div class="kv-row"><dt>Юр. адрес</dt><dd>119017, г. Москва, ул. Остоженка, д. 7</dd></div>
+          <div class="kv-row"><dt>Договор</dt><dd>№ 488-АР от 01.03.2025</dd></div>
+          <div class="kv-row"><dt>Генеральный директор</dt><dd>Петров Иван Сергеевич</dd></div>
+          <div class="kv-row"><dt>E-mail организации</dt><dd>office@sever-sys.ru</dd></div>
+          <div class="kv-row"><dt>Контактное лицо 1</dt><dd>Никитин Михаил · +7 (925) 555-34-12</dd></div>
+          <div class="kv-row"><dt>Контактное лицо 2</dt><dd>Алексей Смирнов · +7 (926) 111-22-33</dd></div>
+          <div class="kv-row"><dt>Контактное лицо 3</dt><dd>Евгения Орлова · +7 (903) 444-55-66</dd></div>
+        </dl>
+        <div class="modal-actions">
+          <button class="btn btn-ghost btn-sm" type="button" data-modal="change-view">Запросить изменение данных</button>
+          <button class="btn btn-soft btn-sm" type="button" data-toast="Выход из кабинета">Выйти</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="change-view" hidden>
+    <div class="modal-card">
+      <button class="back-link" type="button" data-close>← Назад в профиль</button>
+      <h3>Запрос изменения данных</h3>
+      <div class="meta">Изменения проверяет управляющая компания.</div>
+      <div class="form" style="padding:0;border:none;max-width:none">
+        <div class="field-label">Что изменить</div>
+        <label class="field">
+          <select>
+            <option>Телефон</option>
+            <option>E-mail</option>
+            <option>Контактное лицо</option>
+            <option>Паспортные данные</option>
+            <option>Реквизиты организации</option>
+          </select>
+        </label>
+        <div class="field-label">Новое значение</div>
+        <label class="field">
+          <input type="text" placeholder="Например: +7 925 000-00-00" />
+        </label>
+        <div class="field-label">Подтверждающий документ</div>
+        <div class="file-box">Прикрепить PDF / фото
+          <br /><input type="file" style="margin-top:8px" />
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-sm" type="button" data-toast="Заявка на изменение отправлена в УК">Отправить в УК</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-close>Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Управляющая компания — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item" href="news.html">Новости</a>
+          <a class="nav-item" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="company.html">Профиль</a>
+          <a class="nav-item active" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <b>Управляющая компания</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+
+          <div class="notif-pop" hidden>
+            <div class="notif-head">
+              <strong>Уведомления</strong>
+              <button type="button" data-mark-read>Прочитать все</button>
+            </div>
+            <div class="notif-chips">
+              <button class="filter active" type="button">Все</button>
+              <button class="filter" type="button">Документы</button>
+              <button class="filter" type="button">Запросы</button>
+            </div>
+            <div class="notif-list">
+              <a class="notif-item" href="documents.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg></span>
+                <span>
+                  <strong>Новый документ: счёт за сентябрь</strong>
+                  <span>Документы · 10 минут назад</span>
+                </span>
+              </a>
+              <a class="notif-item" href="requests.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-7 7H8l-4 2 1.2-3.4A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7Z" /></svg></span>
+                <span>
+                  <strong>Ресепшен ответил в заявке №108</strong>
+                  <span>Запросы · сегодня, 09:40</span>
+                </span>
+              </a>
+              <a class="notif-item" href="news.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l6 4V6l-6 4H4Z" /><path d="M17 9.5a4 4 0 0 1 0 5" /></svg></span>
+                <span>
+                  <strong>Отключение горячей воды</strong>
+                  <span>Новость по объекту · вчера</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1>Управляющая компания</h1>
+      </div>
+
+      <div class="uk-tabs filters" data-uk-tabs>
+        <button class="filter active" type="button" data-uk="alpha">БЦ «Альфа»</button>
+        <button class="filter" type="button" data-uk="omega">БЦ «Омега»</button>
+      </div>
+
+      <div data-uk-panel="alpha">
+        <section class="panel">
+          <dl class="kv">
+            <div class="kv-row"><dt>Объект</dt><dd>БЦ «Альфа», Остоженка, 7</dd></div>
+            <div class="kv-row"><dt>УК на объекте</dt><dd>УК «Альфа-Сервис»</dd></div>
+            <div class="kv-row"><dt>Управляющий / помощник</dt><dd>+7 (495) 000-11-22</dd></div>
+            <div class="kv-row"><dt>Диспетчерская</dt><dd>+7 (495) 000-11-23 · круглосуточно</dd></div>
+            <div class="kv-row"><dt>СБ / ресепшен</dt><dd>+7 (495) 000-11-24</dd></div>
+            <div class="kv-row"><dt>E-mail</dt><dd>alpha@uk.example</dd></div>
+          </dl>
+        </section>
+        <section class="section" style="margin-top:22px">
+          <div class="section-head"><h2>Регламенты и правила · Альфа</h2></div>
+          <div class="doc-list">
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Правила пребывания в БЦ «Альфа»</strong>
+                <span>PDF · ред. от 01.06.2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Правила пребывания в БЦ «Альфа»" data-meta="PDF · ред. от 01.06.2026">Открыть</button>
+            </article>
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Правила получения пропусков</strong>
+                <span>PDF · ред. от 26.09.2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Правила получения пропусков" data-meta="PDF · ред. от 26.09.2026">Открыть</button>
+            </article>
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Памятка по пожарной безопасности</strong>
+                <span>PDF · 2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Памятка по пожарной безопасности" data-meta="PDF · 2026">Открыть</button>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div data-uk-panel="omega" hidden>
+        <section class="panel">
+          <dl class="kv">
+            <div class="kv-row"><dt>Объект</dt><dd>БЦ «Омега», Московское шоссе, 4</dd></div>
+            <div class="kv-row"><dt>УК на объекте</dt><dd>УК «Омега-Эксплуатация»</dd></div>
+            <div class="kv-row"><dt>Управляющий / помощник</dt><dd>+7 (846) 212-30-10</dd></div>
+            <div class="kv-row"><dt>Диспетчерская</dt><dd>+7 (846) 212-34-56 · круглосуточно</dd></div>
+            <div class="kv-row"><dt>СБ / ресепшен</dt><dd>+7 (846) 212-30-11</dd></div>
+            <div class="kv-row"><dt>E-mail</dt><dd>omega@uk.example</dd></div>
+          </dl>
+        </section>
+        <section class="section" style="margin-top:22px">
+          <div class="section-head"><h2>Регламенты и правила · Омега</h2></div>
+          <div class="doc-list">
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Правила парковки БЦ «Омега»</strong>
+                <span>PDF · ред. от 12.03.2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Правила парковки БЦ «Омега»" data-meta="PDF · ред. от 12.03.2026">Открыть</button>
+            </article>
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Регламент вноса и выноса ТМЦ</strong>
+                <span>PDF · ред. от 12.08.2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Регламент вноса и выноса ТМЦ" data-meta="PDF · ред. от 12.08.2026">Открыть</button>
+            </article>
+            <article class="doc-row">
+              <div class="doc-left"><div class="doc-ico"></div><div>
+                <strong>Правила строительных работ</strong>
+                <span>PDF · ред. от 12.08.2026</span>
+              </div></div>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal="doc-view"
+                data-title="Правила строительных работ" data-meta="PDF · ред. от 12.08.2026">Открыть</button>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <p class="hint" style="margin-top:16px">Контакты и регламенты зависят от бизнес-центра. Список ведётся в Битрикс24.</p>
+    </main>
+  </div>
+
+  <div class="modal" id="doc-view" hidden>
+    <div class="modal-card">
+      <button class="back-link" type="button" data-close>← Назад к регламентам</button>
+      <h3 data-fill-title>Регламент</h3>
+      <div class="meta" data-fill-meta></div>
+      <div class="pdf-stub">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg>
+        Предпросмотр PDF (заглушка прототипа)
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-sm" type="button" data-toast="Скачивание началось">Скачать PDF</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-close>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Новости — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=ad-promo" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item active" href="news.html">Новости</a>
+          <a class="nav-item" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="company.html">Профиль</a>
+          <a class="nav-item" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <b>Новости</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+
+          <div class="notif-pop" hidden>
+            <div class="notif-head">
+              <strong>Уведомления</strong>
+              <button type="button" data-mark-read>Прочитать все</button>
+            </div>
+            <div class="notif-chips">
+              <button class="filter active" type="button">Все</button>
+              <button class="filter" type="button">Документы</button>
+              <button class="filter" type="button">Запросы</button>
+            </div>
+            <div class="notif-list">
+              <a class="notif-item" href="documents.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg></span>
+                <span>
+                  <strong>Новый документ: счёт за сентябрь</strong>
+                  <span>Документы · 10 минут назад</span>
+                </span>
+              </a>
+              <a class="notif-item" href="requests.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-7 7H8l-4 2 1.2-3.4A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7Z" /></svg></span>
+                <span>
+                  <strong>Ресепшен ответил в заявке №108</strong>
+                  <span>Запросы · сегодня, 09:40</span>
+                </span>
+              </a>
+              <a class="notif-item" href="news.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l6 4V6l-6 4H4Z" /><path d="M17 9.5a4 4 0 0 1 0 5" /></svg></span>
+                <span>
+                  <strong>Отключение горячей воды</strong>
+                  <span>Новость по объекту · вчера</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1>Новости</h1>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" type="button">Все</button>
+        <button class="filter" type="button">Важно</button>
+        <button class="filter" type="button">Работы на объекте</button>
+        <button class="filter" type="button">Регламенты</button>
+        <button class="filter" type="button">Инфраструктура</button>
+        <span class="filter-divider"></span>
+        <select class="filter-select" aria-label="Фильтр по объекту">
+          <option>Все объекты</option>
+          <option>БЦ «Альфа» · Офис 142</option>
+          <option>БЦ «Альфа» · Офис 210</option>
+          <option>БЦ «Омега» · Офис 102</option>
+          <option>БЦ «Омега» · Машиноместо B-14</option>
+        </select>
+      </div>
+      <p class="hint" style="margin:-8px 0 14px">Набор тегов ведётся из админки УК (Битрикс24) — здесь показан список-заглушка.</p>
+
+      <div class="ann-list">
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="−15% на брокеридж от партнёров УК"
+          data-meta="Реклама · допуслуги"
+          data-text="Спецпредложение для арендаторов: подбор и расширение офиса через партнёров УК со скидкой 15% до конца месяца. Оформить — в разделе «Допуслуги»."
+          data-image="img/news/ad-broker.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/ad-broker.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-ad">Реклама</span>
+            <strong>−15% на брокеридж от партнёров УК</strong>
+            <span>Допуслуги · спецпредложение</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Скидка на клининг от партнёров"
+          data-meta="Реклама · допуслуги"
+          data-text="Генеральная уборка и постмероприятийный клининг сверх договора — со скидкой для арендаторов БЦ. Заявка в «Допуслуги»."
+          data-image="img/news/ad-clean.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/ad-clean.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-ad">Реклама</span>
+            <strong>Скидка на клининг от партнёров</strong>
+            <span>Допуслуги · акция октября</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Отключение горячей воды"
+          data-meta="Все объекты · сегодня, 10:00–16:00 · тег: Важно"
+          data-text="С 10:00 до 16:00 проводятся работы на тепловом узле. Холодное водоснабжение и электроснабжение работают в обычном режиме."
+          data-image="img/news/water.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/water.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-alert">Важно</span>
+            <strong>Отключение горячей воды</strong>
+            <span>Все объекты · сегодня, 10:00–16:00</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Замена счётчиков на этажах 1–10"
+          data-meta="БЦ «Альфа» · 25.09 · тег: Работы на объекте"
+          data-text="25 сентября с 09:00 до 18:00 подрядчик меняет приборы учёта на этажах 1–10."
+          data-image="img/news/meters.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/meters.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-warn">Работы на объекте</span>
+            <strong>Замена счётчиков на этажах 1–10</strong>
+            <span>БЦ «Альфа» · 25.09</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Обновлены правила бизнес-центра"
+          data-meta="Все объекты · 26.09 · тег: Регламенты"
+          data-text="Обновлён регламент пропусков и строительных работ. Актуальная версия — в разделе УК."
+          data-image="img/news/rules.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/rules.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-info">Регламенты</span>
+            <strong>Обновлены правила бизнес-центра</strong>
+            <span>Все объекты · 26.09</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Новый график ночной уборки МОП"
+          data-meta="Все объекты · 22.09 · тег: Инфраструктура"
+          data-text="С 1 октября ночная уборка мест общего пользования проводится с 22:00 до 05:00."
+          data-image="img/news/clean.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/clean.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-info">Инфраструктура</span>
+            <strong>Новый график ночной уборки МОП</strong>
+            <span>Все объекты · 22.09</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Вымыт фасад северной стороны"
+          data-meta="БЦ «Омега» · 18.09 · тег: Работы на объекте"
+          data-text="Работы завершены, леса демонтированы, парковка у северного входа снова открыта."
+          data-image="img/news/facade.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/facade.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-info">Работы на объекте</span>
+            <strong>Вымыт фасад северной стороны</strong>
+            <span>БЦ «Омега» · 18.09</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Правила парковки обновлены"
+          data-meta="БЦ «Омега» · 12.09 · тег: Регламенты"
+          data-text="Актуальная редакция правил парковки — в разделе управляющей компании."
+          data-image="img/news/rules.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/rules.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-info">Регламенты</span>
+            <strong>Правила парковки обновлены</strong>
+            <span>БЦ «Омега» · 12.09</span>
+          </div>
+        </button>
+
+        <button class="ann-card ann-card--row" type="button" data-modal="ann-view"
+          data-title="Плановая проверка пожарной сигнализации"
+          data-meta="Все объекты · 29.09 · тег: Работы на объекте"
+          data-text="29 сентября с 11:00 до 13:00 — плановая проверка. Возможны короткие срабатывания оповещения."
+          data-image="img/news/fire.jpg">
+          <div class="ann-media ann-media--photo">
+            <img src="img/news/fire.jpg" alt="" />
+          </div>
+          <div class="ann-body">
+            <span class="badge badge-warn">Работы на объекте</span>
+            <strong>Плановая проверка пожарной сигнализации</strong>
+            <span>Все объекты · 29.09</span>
+          </div>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="ann-view" hidden>
+    <div class="modal-card">
+      <button class="back-link" type="button" data-close>← Назад к новостям</button>
+      <img class="ann-modal-photo" data-fill-image alt="" hidden />
+      <h3 data-fill-title>Новость</h3>
+      <div class="meta" data-fill-meta></div>
+      <p data-fill-text></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-close>Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Создать запрос — Личный кабинет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><i class="brand-mark"></i>Кабинет</div>
+      <div>
+        <p class="nav-label">Разделы</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="index.html">Главная</a>
+          <a class="nav-item active" href="requests.html">Мои запросы</a>
+          <a class="nav-item" href="objects.html">Мои объекты</a>
+          <a class="nav-item" href="news.html">Новости</a>
+          <a class="nav-item" href="services.html">Допуслуги</a>
+        </nav>
+      </div>
+      <div>
+        <p class="nav-label">Аккаунт</p>
+        <nav class="nav-scroll">
+          <a class="nav-item" href="company.html">Профиль</a>
+          <a class="nav-item" href="uk.html">Управляющая компания</a>
+          <a class="nav-item" href="documents.html">Документы <span class="nav-badge">2</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header class="top">
+        <div class="crumb">Личный кабинет / <a class="link" href="requests.html">Мои запросы</a> / <b>Создать запрос</b></div>
+        <div class="account">
+          <button class="bell" type="button" data-notif aria-expanded="false" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8.5a6 6 0 1 0-12 0c0 5.2-2 6.5-2 6.5h16s-2-1.3-2-6.5" /><path d="M13.8 19a2 2 0 0 1-3.6 0" /></svg>
+          </button>
+          <a class="account-name" href="company.html"><b>Никитин Михаил</b><small></small></a>
+
+          <div class="notif-pop" hidden>
+            <div class="notif-head">
+              <strong>Уведомления</strong>
+              <button type="button" data-mark-read>Прочитать все</button>
+            </div>
+            <div class="notif-chips">
+              <button class="filter active" type="button">Все</button>
+              <button class="filter" type="button">Документы</button>
+              <button class="filter" type="button">Запросы</button>
+            </div>
+            <div class="notif-list">
+              <a class="notif-item" href="documents.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5v4h4" /><path d="M9 13h6M9 16.5h4" /></svg></span>
+                <span>
+                  <strong>Новый документ: счёт за сентябрь</strong>
+                  <span>Документы · 10 минут назад</span>
+                </span>
+              </a>
+              <a class="notif-item" href="requests.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a7 7 0 0 1-7 7H8l-4 2 1.2-3.4A7 7 0 0 1 11 5h2a7 7 0 0 1 7 7Z" /></svg></span>
+                <span>
+                  <strong>Ресепшен ответил в заявке №108</strong>
+                  <span>Запросы · сегодня, 09:40</span>
+                </span>
+              </a>
+              <a class="notif-item" href="news.html">
+                <span class="notif-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l6 4V6l-6 4H4Z" /><path d="M17 9.5a4 4 0 0 1 0 5" /></svg></span>
+                <span>
+                  <strong>Отключение горячей воды</strong>
+                  <span>Новость по объекту · вчера</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1>Создать запрос</h1>
+      </div>
+
+      <div class="steps">
+        <div class="step-dot on"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+      </div>
+
+      <form class="form" id="quiz">
+        <p class="hint" data-preset-hint hidden></p>
+
+        <section class="quiz-step">
+          <p class="step-label">Шаг 1 из 4 · Объект</p>
+          <div class="pick-grid" data-picks="object"></div>
+          <div class="quiz-nav">
+            <span></span>
+            <button class="btn btn-primary" type="button" data-next>Далее</button>
+          </div>
+        </section>
+
+        <section class="quiz-step" hidden>
+          <p class="step-label">Шаг 2 из 4 · Категория</p>
+          <div class="pick-grid" data-picks="category"></div>
+          <div class="quiz-nav">
+            <button class="btn btn-ghost" type="button" data-prev>← Назад</button>
+            <button class="btn btn-primary" type="button" data-next>Далее</button>
+          </div>
+        </section>
+
+        <section class="quiz-step" hidden>
+          <p class="step-label">Шаг 3 из 4 · Вид заявки</p>
+          <div class="pick-grid" data-picks="service"></div>
+          <div class="quiz-nav">
+            <button class="btn btn-ghost" type="button" data-prev>← Назад</button>
+            <button class="btn btn-primary" type="button" data-next>Далее</button>
+          </div>
+        </section>
+
+        <section class="quiz-step" hidden>
+          <p class="step-label">Шаг 4 из 4 · Детали заявки</p>
+
+          <div class="select-like" data-summary></div>
+          <p class="hint" data-service-hint hidden></p>
+
+          <div data-subcats hidden>
+            <div class="field-label">Подкатегория</div>
+            <div class="subtype-row" data-picks="option"></div>
+          </div>
+
+          <div data-fields></div>
+
+          <div class="rules">
+            <label>
+              <input type="checkbox" id="rules-check" />
+              <span>Ознакомлен с <a class="inline-link" href="uk.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">правилами и регламентами бизнес-центра</a></span>
+            </label>
+            <label>
+              <input type="checkbox" id="paid-check" />
+              <span>Ознакомлен: работы вне зоны УК — <b>за доп. оплату</b>. Перечень — в <a class="inline-link" href="uk.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">разделе УК</a>.</span>
+            </label>
+            <p data-rules-text></p>
+          </div>
+
+          <div class="quiz-nav">
+            <button class="btn btn-ghost" type="button" data-prev>← Назад</button>
+            <button class="btn btn-primary" type="submit">Отправить запрос</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>
