@@ -347,6 +347,41 @@
           "</div>"
         );
       }
+      if (f.type === "table") {
+        const cols = f.columns || [];
+        const rows = f.rows || 3;
+        const head =
+          "<thead><tr>" +
+          cols.map((c) => "<th>" + c.label + "</th>").join("") +
+          "</tr></thead>";
+        const bodyRows = Array.from({ length: rows }, () => {
+          const cells = cols
+            .map((c) => {
+              if (c.type === "select") {
+                return (
+                  "<td><select>" +
+                  (c.options || []).map((o) => "<option>" + o + "</option>").join("") +
+                  "</select></td>"
+                );
+              }
+              return (
+                '<td><input type="text" placeholder="' +
+                (c.placeholder || "") +
+                '" /></td>'
+              );
+            })
+            .join("");
+          return "<tr>" + cells + "</tr>";
+        }).join("");
+        return (
+          label +
+          '<div class="form-table-wrap"><table class="form-table">' +
+          head +
+          "<tbody>" +
+          bodyRows +
+          "</tbody></table></div>"
+        );
+      }
       if (f.type === "textarea") {
         return label + '<label class="field"><textarea rows="3" placeholder="' + (f.placeholder || "") + '"></textarea></label>';
       }
